@@ -1,8 +1,16 @@
+- [STATUS CODES](#status-codes)
+  - [1. Informational Responses](#1-informational-responses)
+  - [2. Successful Responses](#2-successful-responses)
+  - [3. Redirectional Messages](#3-redirectional-messages)
+  - [4. Client Error Responses](#4-client-error-responses)
+  - [5. Server Error Responses](#5-server-error-responses)
+
+
 # STATUS CODES
 
 These are codes used to show or indicate the success of a HTTP request. They are mainly categorized into five groups as discussed below:
 
-1. ## Informational Responses
+ ## 1. Informational Responses
    They range from `100` to `199`.  
    They are used to indicate that a server is working on the user request.  
    They include:
@@ -12,7 +20,7 @@ These are codes used to show or indicate the success of a HTTP request. They are
 - **102** - Indicate that the server is still working on the request and is yet to give a response.
 - **103** - Indicate that the user should start preparing resources needed by the page which the response to their request will originate.
 
-2. ## Successful Responses
+## 2. Successful Responses
    They range from `200` to `299`  
    They serve to show that a request was sucessful.  
    They include:
@@ -27,7 +35,7 @@ These are codes used to show or indicate the success of a HTTP request. They are
 - **207** - This stands for multiple status codes in a situation where the information is from various resources.
 - **226** - This indicates that the responce is a representation of an edited version of a `GET` request to a resource.
 
-3. ## Redirectional Messages
+## 3. Redirectional Messages
    They range from `300` to `399`  
    They are used to indicate that more action is neede from the user for the request to be complete.  
    They include:
@@ -38,7 +46,7 @@ These are codes used to show or indicate the success of a HTTP request. They are
 - **303** - Indicate that the user is directing the user to get the requested resource in another URI.
 - **304** - Indicate that the user can continue using the response cached version because it has not yet been modified.
 
-4. ## Client Error Responses
+## 4. Client Error Responses
    They range from `400` to `499`  
    They are used to indicate that there was an error in the client side of the request.  
    They include:
@@ -52,7 +60,7 @@ These are codes used to show or indicate the success of a HTTP request. They are
 - **415** - Indicates that the media format of the request is not supported by the server.
 - **429** - Indicates that the user has sent too many requested in a given amount of time.
 
-5. ## Server Error Responses
+## 5. Server Error Responses
    They range from `500` to `599`  
    They are used to indicate that there was an error on the server while handling the request.  
    They include:
